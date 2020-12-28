@@ -3,11 +3,15 @@
 This repository is an example of how to deploy a K3S cluster on [Civo](https://www.civo.com)
 It demonstrates how to use the provider and resources.
 
-## Installation
+## Installation
 
 Either pass variables directly, through tfvars or set as global envs.
 
-TF_VAR_civotoken="TOKEN_NAME" TF_VAR_cluster_name="civo-terraform" TF_VAR_cluster_nodes=3 terraform plan
+```
+TF_VAR_civotoken="TOKEN_NAME" \
+TF_VAR_cluster_name="civo-terraform" \
+TF_VAR_cluster_nodes=3 terraform plan
+```
 
 Expected output...
 
